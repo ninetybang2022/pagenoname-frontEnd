@@ -18,6 +18,8 @@
             BlogNav,
             BlogHead,
             BlogMobileNav
+        },
+        methods: {
         }
     }
 </script>
