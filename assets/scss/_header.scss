@@ -7,7 +7,6 @@
 %nav-item_active {
     background:map_get($headers, fontColor);
     color:map_get($headers, bgColor);
-    //@include radiusTop(5px);
 }
 
 .blog-header {
@@ -27,8 +26,7 @@
         text-align: center;
         @include square(map_get($btnNavList, size));
         &.active {
-            background: map_get($headers, fontColor);
-            color:map_get($headers, bgColor);
+            @extend %nav-item_active;
         }
     }
     .blog-head-logo {
@@ -41,9 +39,9 @@
 
 .blog-nav {
     @extend %block-head;
-    @include flex();
+    @include flex(false);
     .nav-item {
-        display: block;
+        @include block;
         padding:0 20px;
         color:map_get($headers, fontColor);
         @include transition();
@@ -53,5 +51,25 @@
         &.active {
             @extend %nav-item_active;
         }
+    }
+}
+
+.blog-mobile-nav {
+    @extend %block-head;
+    @include none();
+    .nav-item {
+        @extend %nav-item_active;
+        font-size:18px;
+        border-bottom:1px solid #eee;
+        &.active {
+            border-bottom: 2px solid map_get($headers, bgColor);
+        }
+    }
+    @include flexColumn();
+    @include boxshadow();
+    text-align: center;
+    height:auto;
+    &.active {
+        @include flex(true);
     }
 }
