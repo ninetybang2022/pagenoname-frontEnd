@@ -1,0 +1,12 @@
+@media screen and (max-width: map_get($sizes,small)) {
+
+    .blog-header {
+        .btn-nav-list {
+            @include block;
+        }
+        .blog-nav {
+            @include none;
+        }
+    }
+
+}

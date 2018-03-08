@@ -1,0 +1,57 @@
+%block-head {
+    width:map_get($sizes, all);
+    height:map_get($sizes, headerItem);
+    line-height:map_get($sizes, headerItem);
+}
+
+%nav-item_active {
+    background:map_get($headers, fontColor);
+    color:map_get($headers, bgColor);
+    //@include radiusTop(5px);
+}
+
+.blog-header {
+    width:map_get($sizes, all);
+    background:map_get($headers, bgColor);
+    color:map_get($headers, fontColor);
+}
+
+.blog-head {
+    @extend %block-head;
+    @include flex;
+    flex-direction: row;
+
+    .btn-nav-list {
+        @include none;
+        font-size:30px;
+        text-align: center;
+        @include square(map_get($btnNavList, size));
+        &.active {
+            background: map_get($headers, fontColor);
+            color:map_get($headers, bgColor);
+        }
+    }
+    .blog-head-logo {
+        margin:0;
+        text-align: center;
+        font-size:18px;
+        flex: 1;
+    }
+}
+
+.blog-nav {
+    @extend %block-head;
+    @include flex();
+    .nav-item {
+        display: block;
+        padding:0 20px;
+        color:map_get($headers, fontColor);
+        @include transition();
+        &:hover {
+            @extend %nav-item_active;
+        }
+        &.active {
+            @extend %nav-item_active;
+        }
+    }
+}

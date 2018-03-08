@@ -1,0 +1,21 @@
+$sizes: (
+    container:960px,
+    headerItem:60px,
+    small:768px,
+    all:100%,
+);
+
+$colors: (
+    headerBgColor:#000,
+    headerFontColor:#fff
+);
+
+$btnNavList:(
+    size:map_get($sizes, headerItem),
+    fontSize:30px
+);
+
+$headers: (
+    bgColor:map_get($colors, headerBgColor),
+    fontColor:map_get($colors, headerFontColor)
+)
