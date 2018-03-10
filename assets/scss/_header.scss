@@ -1,14 +1,3 @@
-%block-head {
-    width:map_get($sizes, all);
-    height:map_get($sizes, headerItem);
-    line-height:map_get($sizes, headerItem);
-}
-
-%nav-item_active {
-    background:map_get($headers, fontColor);
-    color:map_get($headers, bgColor);
-}
-
 .blog-header {
     width:map_get($sizes, all);
     background:map_get($headers, bgColor);
@@ -54,22 +43,27 @@
     }
 }
 
-.blog-mobile-nav {
-    @extend %block-head;
+.blog-search {
+    background: map_get($headers, fontColor);
     @include none();
-    .nav-item {
-        @extend %nav-item_active;
+    .blog-search-word {
+        @include float(left);
+        padding:0 20px;
         font-size:18px;
-        border-bottom:1px solid #eee;
-        &.active {
-            border-bottom: 2px solid map_get($headers, bgColor);
-        }
+        @include block;
+        width:80%;
+        height:map_get($sizes, headerItem);
+        line-height:map_get($sizes, headerItem);
+        border:2px solid #000;
+        box-sizing: border-box;
     }
-    @include flexColumn();
-    @include boxshadow();
-    text-align: center;
-    height:auto;
-    &.active {
-        @include flex(true);
+    .blog-search-btn {
+        @include float(left);
+        height:map_get($sizes, headerItem);
+        line-height:map_get($sizes, headerItem);
+        width:20%;
+        text-align: center;
+        background:map_get($headers, bgColor);
+        color:map_get($headers, fontColor);
     }
 }

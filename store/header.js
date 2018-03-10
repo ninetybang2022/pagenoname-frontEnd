@@ -1,5 +1,6 @@
 export const state = () => ({
-    mobileNavActive: false
+    mobileNavActive: false,
+    activeIndex: 0
 })
 
 export const mutations = {

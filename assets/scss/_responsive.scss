@@ -5,15 +5,14 @@
             @include block;
         }
         .blog-nav {
-            @include none;
+            @include mobileNav;
+        }
+        .blog-search {
+            @include block;
         }
     }
 }
 
 @media screen and (min-width: map_get($sizes, small)) {
-    .blog-header {
-        .blog-mobile-nav {
-            display: none !important;
-        }
-    }
+
 }

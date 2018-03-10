@@ -1,0 +1,11 @@
+%block-head {
+    width:map_get($sizes, all);
+    height:map_get($sizes, headerItem);
+    line-height:map_get($sizes, headerItem);
+}
+
+%nav-item_active {
+    background:map_get($headers, fontColor);
+    color:map_get($headers, bgColor);
+}
+
