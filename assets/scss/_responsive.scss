@@ -11,6 +11,11 @@
             @include block;
         }
     }
+
+    .blog-aside {
+        @include none();
+    }
+
 }
 
 @media screen and (min-width: map_get($sizes, small)) {

@@ -45,6 +45,7 @@
 
 .blog-search {
     background: map_get($headers, fontColor);
+    height:map_get($sizes, headerItem);
     @include none();
     .blog-search-word {
         @include float(left);

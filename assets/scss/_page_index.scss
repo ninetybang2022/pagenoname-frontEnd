@@ -1,0 +1,29 @@
+.blog-page-index {
+    overflow: hidden;
+    padding:map_get($sizes, defaultPadding);
+    @include flex();
+}
+
+.article-list {
+    width:map_get($sizes, container) * 0.64;
+    margin-right:map_get($sizes, container) * 0.03;
+}
+
+.blog-aside {
+    width:map_get($sizes, container) * 0.33;
+    .aside-search {
+        height:map_get($sizes, headerItem);
+        .blog-search {
+            @include block;
+            .blog-search-word {
+                width:75%;
+            }
+            .blog-search-btn {
+                width:25%;
+                min-width: map_get($sizes, headerItem);
+                min-height:map_get($sizes, headerItem);
+            }
+        }
+    }
+
+}
