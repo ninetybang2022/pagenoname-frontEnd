@@ -8,7 +8,28 @@ $sizes: (
 
 $colors: (
     headerBgColor:#000,
-    headerFontColor:#fff
+    headerFontColor:#fff,
+    attrColor:#999
+);
+
+$articleList: (
+    titleFontSize:20px,
+    introColor:#666,
+    introLineHeight:1.4,
+    margin:10px,
+    itemMargin:map_get($sizes, defaultPadding),
+    attrFontSize: 17px,
+    btnFontSize:13px
+);
+
+$btn: (
+    fontColor:#fff,
+    bgColor:#000
+);
+
+$footer: (
+    bgColor:#000,
+    fontColor:#fff
 );
 
 $btnNavList:(

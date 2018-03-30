@@ -1,7 +1,40 @@
 .blog-article-item {
     h2 {
-        font-size: 20px;
+        font-size: map_get($articleList, titleFontSize);
         padding: 0;
         margin: 0;
     }
+    .article-item-attr {
+        font-size:map_get($articleList, attrFontSize);
+        padding:map_get($articleList, margin) 0;
+        color:map_get($colors, attrColor)
+    }
+    .article-item-intro {
+        .article-item-intro-text {
+            color:map_get($articleList, introColor);
+            margin:0 0 map_get($articleList, margin) 0;
+            line-height: map_get($articleList, introLineHeight);
+            text-align: justify;
+        }
+        .article-item-intro-img {
+            width:map_get($sizes, all);
+            max-width: map_get($sizes, all);
+            display: inline-block;
+            margin-bottom:map_get($articleList, margin) * 0.5;
+        }
+        .article-item-read {
+            font-size:map_get($articleList, btnFontSize);
+            margin-bottom: map_get($articleList, margin);
+        }
+        margin-bottom:map_get($articleList, margin);
+        border-bottom:1px solid #999;
+    }
+    .article-item-tags {
+        .btn-default {
+            font-size:map_get($articleList, btnFontSize);
+            margin-right: map_get($articleList, margin);
+        }
+    }
+    margin-bottom:map_get($articleList, itemMargin) * 1.5;
+
 }

@@ -3,6 +3,7 @@
         <div class="blog-page-index">
             <div class="article-list">
                 <article-item></article-item>
+
             </div>
             <aside class="blog-aside">
                 <div class="aside-search">
@@ -24,3 +25,6 @@
         }
     }
 </script>
+<style>
+    .input[type=radio] {width:100px;height:100px;}
+</style>

@@ -1,0 +1,19 @@
+%btn {
+    padding: 10px;
+    display: inline-block;
+}
+.btn-block {
+    @extend %btn;
+    color:map_get($btn, fontColor);
+    background:map_get($btn, bgColor);
+}
+
+.btn-default {
+    @extend  %btn;
+    border:1px solid map_get($btn, bgColor);
+    color:map_get($btn, bgColor);
+    &:hover {
+        color:map_get($btn, fontColor);
+        background:map_get($btn, bgColor);
+    }
+}

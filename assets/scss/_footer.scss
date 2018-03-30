@@ -1,0 +1,9 @@
+footer {
+    padding:45px 0;
+    font-size:13px;
+    text-align: center;
+    background:map_get($footer, bgColor);
+    color:map_get($footer, fontColor);
+    margin-top:90px;
+    p {margin:0;}
+}

@@ -1,6 +1,9 @@
 @media screen and (max-width: map_get($sizes,small)) {
 
     .blog-header {
+        position:fixed;
+        top:0;
+        @include boxshadow();
         .btn-nav-list {
             @include block;
         }
@@ -11,10 +14,15 @@
             @include block;
         }
     }
-
+    .article-list {
+        margin-top:map_get($sizes, headerItem);
+        width:map_get($sizes,all);
+    }
     .blog-aside {
         @include none();
     }
+
+    .article-list {margin-right:0;}
 
 }
 

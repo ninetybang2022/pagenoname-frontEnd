@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "0.0.1",
   "description": "is my blog",
-  "author": "赖文邦 <ninetybang@gmail.com>",
+  "author": "页无名 <ninetybang@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "backpack dev",
