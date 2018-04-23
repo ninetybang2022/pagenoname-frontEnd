@@ -16,7 +16,6 @@ input{
     width:map_get($sizes, all);
     max-width: map_get($sizes, container);
     margin:0 auto;
-    overflow: hidden;
 }
 
 .hide {

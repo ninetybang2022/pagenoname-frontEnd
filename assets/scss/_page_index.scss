@@ -1,5 +1,4 @@
 .blog-page-index {
-    overflow: hidden;
     padding:map_get($sizes, defaultPadding);
     @include flex();
 }
